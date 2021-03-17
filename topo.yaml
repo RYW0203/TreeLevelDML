@@ -1,0 +1,5 @@
+- nodes:
+  - { name: w0, host: localhost, port: 35000, fathers: [], sons: [w1] }
+  - { name: w1, host: localhost, port: 35001, fathers: [w0], sons: [w2,w3] }
+  - { name: w2, host: localhost, port: 35002, fathers: [w1], sons: [] }
+  - { name: w3, host: localhost, port: 35003, fathers: [w1], sons: [] }
